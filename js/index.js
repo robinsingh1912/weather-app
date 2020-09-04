@@ -1,4 +1,4 @@
-const apiKey = "6df7a3a05b739e9f064400677cefa104";
+const apiKey = "";
 var loading = true;
 var today = Date().toLocaleString().slice(0, 15);
 console.log(today);

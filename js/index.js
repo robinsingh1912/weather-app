@@ -3,7 +3,6 @@ const apiKey = "6df7a3a05b739e9f064400677cefa104";
 //set background acording to time
 var today = Date().toLocaleString().slice(0, 15);
 function setBackground(time) {
-  time = 6;
   body = document.getElementsByTagName("body")[0];
   if (time > 5 && time < 9) {
     body.style.backgroundImage =

@@ -7,11 +7,33 @@
   padding: 0;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+.tran-box {
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .cityName {
-  font-size: 5rem;
+  font-size: 4rem;
+}
+
+#city {
+  margin-top: 0px;
+  border: none;
+  border-radius: 0 0 0.75rem 0.75rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 50%;
+  -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5), inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #ffffff;
+          box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5), inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #ffffff;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+#city:focus {
+  width: 75% !important;
 }
 
 main {
@@ -20,6 +42,24 @@ main {
 
 p {
   color: var(--text-color);
+}
+
+.temperature {
+  font-size: 3.5rem;
+  text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.15);
+}
+
+.tempMinMax {
+  font-size: 1.5rem;
+  text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.15);
+}
+
+.fellsLike {
+  font-size: 1rem;
+}
+
+.weatherType {
+  font-size: 2rem;
 }
 
 /* Absolute Center CSS Spinner */

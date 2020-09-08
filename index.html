@@ -14,13 +14,14 @@
     <main>
 
         <div class="loading">Loading&#8230;</div>
-
-        <section class="container-fluid mt-5">
+        </section>
+        <p id="error" class="d-none"></p>
+        <section id="search" class="container-fluid">
             <div class="container">
-                <form class="form-inline">
-                    <div class="form-group">
-                        <input id="city" class="form-control mr-3" type="text" placeholder="Search for a city"
-                            autofocus>
+                <form class="form-inline needs-validation">
+                    <div class="form-group ">
+                        <input id="city" class="form-control mx-auto text-center border-top-0 " name="city" type="text"
+                            placeholder="Search for a city" autofocus>
                         <button class="btn btn-primary d-none" type="submit">SUBMIT</button>
                         <span class="msg"></span>
                     </div>
@@ -30,25 +31,50 @@
 
         <section class="ajax-section my-5">
             <div class="container text-center">
+
                 <div>
-                    <p class="cityName display-1 my-5"></p>
+                    <p class="cityName mt-5">City Name</p>
                 </div>
                 <div>
-                    <p class="date"></p>
+                    <p class="date display-5">Today</p>
                 </div>
-                <div>
-                    <p class="temperature"></p>
+                <div class="row d-inline-block align-items-center">
+                    <div class="align-middle">
+                        <div class="py-1 px-5 tran-box shadow">
+                            <p class="temperature d-inline">15</p><span class="temperature text-white">&#8451;</span>
+
+                            <p class="fellsLike text-light lead ">15.5'C</p>
+                            <p class="tempMinMax">--/--</p>
+                        </div>
+
+                    </div>
+
                 </div>
-                <div>
-                    <p class="weatherType"></p>
+                <div class="col pt-3">
+                    <div class="icon">icon</div>
+                    <div>
+                        <p class="weatherType">Snow</p>
+                    </div>
                 </div>
-                <div>
-                    <p class="tempMinMax"></p>
+
+                <div class="row tran-box shadow pt-3">
+                    <div class="col border-right">
+                        <img src="https://img.icons8.com/fluent/48/000000/hygrometer.png" />
+                        <p class="humidity">%</p>
+                    </div>
+                    <div class="col border-right">
+                        <img src="https://img.icons8.com/fluent/48/000000/atmospheric-pressure.png" />
+                        <p class="pressure">hPa</p>
+                    </div>
+                    <div class="col ">
+                        <img src="https://img.icons8.com/fluent/48/000000/windsock.png" />
+                        <p class="windSpeed">m/s</p>
+                    </div>
                 </div>
+
+
             </div>
 
-        </section>
-        <p id="error"></p>
 
 
     </main>

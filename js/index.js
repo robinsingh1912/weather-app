@@ -1,4 +1,4 @@
-const apiKey = "6df7a3a05b739e9f064400677cefa104";
+const apiKey = "";
 
 //set background acording to time
 var today = Date().toLocaleString().slice(0, 15);
